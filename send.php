@@ -28,6 +28,8 @@ if(!isset($_POST['fio']) and !isset($_POST['email'])){
         echo "При отправке сообщения возникли ошибки";
     }
 }
+ini_set('display_errors','On');
+error_reporting('E_ALL');
 ?>
 </body>
 </html>
