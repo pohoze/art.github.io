@@ -134,7 +134,7 @@
                                                 <i class="fal fa-mobile-android"></i>
                                             </div>
                                             <h3>Phone</h3>
-                                            <a href="contacts.html#">+7(920)605-05-76</a>
+                                            <a href="tel:+79206050576"><span>+7(920)605-05-76</span></a>
                                         </div>
                                         <!-- features-box end  -->
                                         <!--features-box -->
@@ -143,7 +143,7 @@
                                                 <i class="fal fa-envelope-open"></i>
                                             </div>
                                             <h3>Email</h3>
-                                            <a href="contacts.html#">bysany.deseign@gmail.com</a>
+                                            <a href="mailto:bysany.deseign@gmail.com" target="_blank">bysany.deseign@gmail.com</a>
                                         </div>
                                         <!-- features-box end  -->
                                     </div>
@@ -160,6 +160,7 @@
                         </div>
                     </div>
                     <!--  map end  -->
+                    <!--  contact send form  -->
                     <div class="fl-wrap mar-top">
                         <div class="row">
                             <div class="col-md-3">
@@ -171,58 +172,38 @@
                             <div class="col-md-7">
                                 <div id="contact-form">
                                     <div id="message"></div>
-                                    <form class="custom-form" action="send.php" name="contactform"
-                                          id="form">
-                                        <fieldset>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label><i class="fal fa-user"></i></label>
-                                                    <input type="text" name="name" id="name" placeholder="Your Name *"
-                                                            required="required"/>
+                                    <form action="send.php" method="post">
+                                        <form action="send.php" method="post">
+                                            <fieldset>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label><i class="fal fa-user"></i></label>
+                                                        <input type="text" name="fio" id="fio"
+                                                               placeholder="Your Name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fal fa-envelope"></i> </label>
+                                                        <input type="text" name="email" id="email"
+                                                               placeholder="Email Address" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fal fa-mobile-android"></i> </label>
+                                                        <input type="text" name="phone" placeholder="Phone"
+                                                               required="required"/>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label><i class="fal fa-envelope"></i> </label>
-                                                    <input type="text" name="email" id="email"
-                                                           placeholder="Email Address*" required="required"/>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label><i class="fal fa-mobile-android"></i> </label>
-                                                    <input type="text" name="phone" placeholder="Phone *"
-                                                            required="required"/>
-                                                </div>
-<!--                                                <div class="col-md-6">
-                                                    <select name="subject" id="subject" data-placeholder="Subject"
-                                                            class="chosen-select sel-dec">
-                                                        <option>Subject</option>
-                                                        <option value="Order Project">Order Project</option>
-                                                        <option value="Support">Support</option>
-                                                        <option value="Other Question">Other Question</option>
-                                                    </select>
-                                                </div>-->
-                                            </div>
-                                            <textarea name="comments" id="comments" cols="40" rows="3"
-                                                      placeholder="Your Message:"></textarea>
-                                            <!--<div class="verify-wrap">
-                                                <span class="verify-text"> How many gnomes were in the story about the "Snow-white" ?</span>
-                                                <select name="verify" id="verify" data-placeholder="0"
-                                                        class="chosen-select">
-                                                    <option>0</option>
-                                                    <option value="9">9</option>
-                                                    <option value="5">5</option>
-                                                    <option value="7">7</option>
-                                                    <option value="2">2</option>
-                                                </select>
-                                            </div>-->
-                                            <div class="clearfix"></div>
-                                            <button class="btn float-btn flat-btn color-btn" type="submit">Send Message
-                                            </button>
-                                        </fieldset>
+                                                <div class="clearfix"></div>
+                                                <button class="btn float-btn flat-btn color-btn" type="submit">Send
+                                                    Message
+                                                </button>
+                                            </fieldset>
+                                        </form>
                                     </form>
                                 </div>
-                                <!-- contact form  end-->
                             </div>
                         </div>
                     </div>
+                    <!--  contact send form end  -->
                 </div>
                 <div class="bg-parallax-module" data-position-top="70" data-position-left="20"
                      data-scrollax="properties: { translateY: '-250px' }"></div>
